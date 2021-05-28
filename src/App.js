@@ -1,9 +1,16 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Homepage from "./pages/homepage/homepage.components";
 
 class App extends Component {
   render() {
-    return <div className='App'>Hello World</div>;
+    // console.log("started ");
+
+    return (
+      <div className="App">
+        <Homepage />
+      </div>
+    );
   }
 }
 
