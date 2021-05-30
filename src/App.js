@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router";
 import "./App.css";
+import CollectionPreview from "./components/collection-preview/collection-preview";
 import Homepage from "./pages/homepage/homepage.components";
-import ShopPages from "./pages/shopPages";
+import shopPage from "./pages/shop/shopPage";
 
 class App extends Component {
   render() {
@@ -14,8 +15,8 @@ class App extends Component {
           <Route path="/" exact>
             <Homepage />
           </Route>
-          {/* <Route path="/topic" exact component={} /> */}
-          <Route path="/shop/:id" component={ShopPages} />
+          <Route path="/shop" exact component={shopPage} />
+          <Route path="/shop/:id" component={CollectionPreview} />
         </Switch>
       </div>
     );
