@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router";
 import "./App.css";
 import CollectionPreview from "./components/collection-preview/collection-preview";
+import Header from "./components/header/header.components";
 import Homepage from "./pages/homepage/homepage.components";
 import shopPage from "./pages/shop/shopPage";
 
@@ -11,6 +12,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Header />
         <Switch>
           <Route path="/" exact>
             <Homepage />
